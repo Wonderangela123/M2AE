@@ -9,7 +9,7 @@ M2AE is a predictive framework with multi-view data. The model learns view-speci
 
 Please cite the following reference to acknowledge the usage:
 
-Anqi Liu<sup>#</sup>, Bo Tian<sup>#</sup>, Kuan-Jui Su, Lindong Jiang, Chen Zhao, Meng Song, Yong Liu, Gang Qu, Ziyu Zhou, Xiao Zhang, Chuan Qiu, Zhe Luo, Qing Tian, Hui Shen, Zhengming Ding*, Hong-Wen Deng*. Interpretable Multi-View Integrative Approaches Imputing Serum Short-Chain Fatty Acids from Gut Microbiome.
+Anqi Liu<sup>#</sup>, Bo Tian<sup>#</sup>, Kuan-Jui Su, Lindong Jiang, Chen Zhao, Meng Song, Yong Liu, Gang Qu, Ziyu Zhou, Xiao Zhang, Chuan Qiu, Zhe Luo, Qing Tian, Hui Shen, Zhengming Ding*, Hong-Wen Deng*. **Interpretable Multi-View Integrative Approaches Imputing Serum Short-Chain Fatty Acids from Gut Microbiome.**
 
 Co-first authors # 
 Co-corresponding authors * 
