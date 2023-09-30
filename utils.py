@@ -49,17 +49,6 @@ def load_data(data_folder):
     scfa_name = np.genfromtxt(os.path.join(data_folder,'scfa_te.csv'), dtype=np.dtype(str)) 
     scfa_test_set = np.array(scfa_name[:, 1:], dtype=np.float32)
 
-    ## column-wise normalization (feature normalization)
-    train_set = normalize(train_set, norm='l2', axis=0)
-    covariates_train_set = normalize(covariates_train_set, norm='l2', axis=0)
-    dietary_train_set = normalize(dietary_train_set, norm='l2', axis=0)
-    scfa_train_set = normalize(scfa_train_set, norm='l2', axis=0)
-
-    test_set = normalize(test_set, norm='l2', axis=0)
-    covariates_test_set = normalize(covariates_test_set, norm='l2', axis=0)
-    dietary_test_set = normalize(dietary_test_set, norm='l2', axis=0)
-    scfa_test_set = normalize(scfa_test_set, norm='l2', axis=0)
-
     ## combine three data views into one list
     data_tr_list=[]
     data_tr_list.append(torch.tensor(train_set)) # view 1 
