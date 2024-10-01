@@ -15,5 +15,6 @@ M<sup>2</sup>AE is a framework for prediction tasks with multi-view data as inpu
 Anqi Liu<sup>#</sup>, Bo Tian<sup>#</sup>, Chuan Qiu, Kuan-Jui Su, Lindong Jiang, Chen Zhao, Meng Song, Yong Liu, Gang Qu, Ziyu Zhou, Xiao Zhang, Shashank Sajjan Mungasavalli Gnanesh, Vivek Thumbigere-Math, Zhe Luo, Qing Tian, Li-Shu Zhang, Chong Wu, Zhengming Ding*, Hui Shen*, Hong-Wen Deng*. **Interpretable Multi-View Integrative Approaches Imputing Serum Short-Chain Fatty Acids from Gut Microbiome.**
 
 #These authors contributed equally: Anqi Liu and Bo Tian
+
 *Corresponding authors: Correspondence to Zhengming Ding, Hui Shen or Hong-Wen Deng.
 
