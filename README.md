@@ -1,6 +1,6 @@
 # M<sup>2</sup>AE
 
-We developed an innovative multi-task multi-view integrative approach (**M<sup>2</sup>AE, Multi-task Multi-View Attentive Encoders**) to predict the abundances of serum short chain fatty acids (SCFAs) by integrating three types of views, i.e., gut microbiomes, dietary habits, and host characteristics.
+We developed an innovative multi-task multi-view integrative approach (**M<sup>2</sup>AE, Multi-task Multi-View Attentive Encoders**) ), to impute blood SCFA levels using gut metagenomic sequencing (MGS) data, while taking into account the intricate interplay among the gut microbiome, dietary features, and host characteristics.
 
 ![image](https://github.com/Wonderangela123/M2AE/assets/140135188/37f7b95a-5971-4a65-8277-a9b4a5788811)
 
