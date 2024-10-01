@@ -3,7 +3,6 @@ import scipy.sparse as sp
 import os
 import torch
 import torch.nn.functional as F
-from sklearn.preprocessing import normalize
 
 cuda = True if torch.cuda.is_available() else False
 
@@ -14,7 +13,7 @@ def preprocess_data(data_folder, device):
     adj_train_list = []
     adj_test_list = []
     for i in range(len(data_tr_list)):
-        adj_train_list.append(preprocess_graph(features_to_adj(data_tr_list[i])).to(device).requires_grad_(True)) # Some preprocessing (normalization)
+        adj_train_list.append(preprocess_graph(features_to_adj(data_tr_list[i])).to(device).requires_grad_(True)) # Some preprocessing (log normalization)
         adj_test_list.append(preprocess_graph(features_to_adj(data_te_list[i])).to(device).requires_grad_(True))
         data_tr_list[i] = data_tr_list[i].to(device).requires_grad_(True)
         data_te_list[i] = data_te_list[i].to(device).requires_grad_(True)
@@ -48,6 +47,21 @@ def load_data(data_folder):
     scfa_train_set = np.array(scfa_name[:, 1:], dtype=np.float32)
     scfa_name = np.genfromtxt(os.path.join(data_folder,'scfa_te.csv'), dtype=np.dtype(str)) 
     scfa_test_set = np.array(scfa_name[:, 1:], dtype=np.float32)
+
+    ## column-wise normalization (sample normalization)
+    epsilon = 1e-9  # A small constant to avoid log(0) or negative values
+
+    # For training sets
+    train_set = np.log(train_set + epsilon)
+    covariates_train_set = np.log(covariates_train_set + epsilon)
+    dietary_train_set = np.log(dietary_train_set + epsilon)
+    scfa_train_set = np.log(scfa_train_set + epsilon)
+
+    # For test sets
+    test_set = np.log(test_set + epsilon)
+    covariates_test_set = np.log(covariates_test_set + epsilon)
+    dietary_test_set = np.log(dietary_test_set + epsilon)
+    scfa_test_set = np.log(scfa_test_set + epsilon)     
 
     ## combine three data views into one list
     data_tr_list=[]
