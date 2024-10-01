@@ -1,6 +1,6 @@
 # M<sup>2</sup>AE
 
-We developed an innovative multi-task multi-view integrative approach (**M<sup>2</sup>AE, Multi-task Multi-View Attentive Encoders**) ), to impute blood SCFA levels using gut metagenomic sequencing (MGS) data, while taking into account the intricate interplay among the gut microbiome, dietary features, and host characteristics.
+We developed an innovative multi-task multi-view integrative approach (**M<sup>2</sup>AE, Multi-task Multi-View Attentive Encoders**), to impute blood SCFA levels using gut metagenomic sequencing (MGS) data, while taking into account the intricate interplay among the gut microbiome, dietary features, and host characteristics.
 
 ![image](https://github.com/user-attachments/assets/c95ad56b-2f83-4d74-aed4-487d1ec19906)
 
