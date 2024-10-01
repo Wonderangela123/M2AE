@@ -46,3 +46,4 @@ def test(model_dict, data_te_list, adj_test_list, scfa_test_set):
     c = model_dict["C"](ci_list) 
 
     return c
+    
